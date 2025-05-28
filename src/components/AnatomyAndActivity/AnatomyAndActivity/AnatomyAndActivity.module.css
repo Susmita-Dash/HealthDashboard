@@ -1,0 +1,135 @@
+/* Container for both sections */
+.container {
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+  width: 100%;
+}
+
+/* Anatomy Section Styles */
+.anatomySection {
+  position: relative;
+  flex: 1;
+  background-color: #ffffff;
+  border-radius: 18px;
+  padding: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.imagePlaceholder {
+  width: 80%;
+  height: 360px;
+  background-color: #eef7fc;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  border-radius: 18px;
+}
+
+.anatomyImage {
+  max-width: 180px;
+  max-height: 350px;
+  object-fit: contain;
+  z-index: 1;
+}
+
+.indicator {
+  position: absolute;
+  padding: 6px 16px;
+  border-radius: 10px;
+  font-size: 0.95em;
+  color: #fff;
+  font-weight: 500;
+  box-shadow: 0 2px 8px rgba(44, 62, 80, 0.08);
+  white-space: nowrap;
+  z-index: 2;
+}
+
+.healthyHeart {
+  background-color: #260b65;
+  top: 28%;
+  left: 60%;
+}
+
+.healthyLeg {
+  background-color: #08e7e7;
+  top: 65%;
+  left: -25%;
+}
+
+/* Activity Feed Styles */
+.activityFeed {
+  background-color: #fff;
+  border-radius: 18px;
+  box-shadow: 0 4px 24px rgba(0, 0, 0, 0.04);
+  padding: 24px 16px 80px 16px;
+  width: 100%;
+  margin: 0 auto;
+  margin-top: 0;
+  position: relative;
+  overflow: visible;
+}
+
+.activityFeed h3 {
+  font-size: 1.2rem;
+  font-weight: 700;
+  color: #23235b;
+  margin: 0;
+  padding-top: 0;
+}
+
+.appointmentSummary {
+  font-size: 0.95rem;
+  color: #a0a3bd;
+  margin-bottom: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: end;
+  gap: 10px;
+}
+
+.barChart {
+  display: flex;
+  align-items: flex-end;
+  justify-content: space-between;
+  height: 80px;
+  padding: 0;
+  gap: 45px;
+  width: 100%;
+  max-width: 224px;
+  margin-left: 100px;
+}
+
+.barContainer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 28px;
+  flex: 0 0 28px;
+}
+
+.bar {
+  width: 16px;
+  border-radius: 12px 12px 6px 6px;
+  background: linear-gradient(180deg, #38d6ae 0%, #4f8cff 100%);
+  margin-bottom: 5px;
+  transition: height 0.3s cubic-bezier(0.4,0,0.2,1);
+}
+
+.dayLabel {
+  font-size: 0.85rem;
+  color: #a0a3bd;
+  margin-top: 2px;
+  font-weight: 500;
+  letter-spacing: 0.01em;
+}
+
+.headerRow {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  margin-bottom: 1rem;
+} 

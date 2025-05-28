@@ -1,0 +1,44 @@
+.upcomingSchedule {
+    background-color: #ffffff; 
+    border-radius: 8px; 
+    padding: 20px; 
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.05); 
+    flex: 2; 
+    display: flex;
+    flex-direction: column;
+    gap: 15px; 
+}
+
+.upcomingSchedule h3 {
+    margin-top: 0;
+    margin-bottom: 10px;
+    font-size: 1.3em;
+}
+
+.upcomingSchedule h4 {
+    margin-top: 0;
+    margin-bottom: 10px;
+    font-size: 1.3em;
+}
+
+.daySchedule {
+    display: flex;
+    flex-direction: column;
+    gap: 10px; 
+}
+
+.daySchedule h5 {
+    margin: 0;
+    margin-top: -10px;
+    font-size: 1.1em;
+    color: #555; 
+}
+
+.appointmentsList {
+    display: flex;
+    flex-direction: row; 
+    gap: 18px; 
+    flex-wrap: wrap; 
+    margin-top: 6px;
+}
+

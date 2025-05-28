@@ -1,0 +1,193 @@
+.scheduleSection {
+  display: flex;
+  flex-direction: column;
+  gap: 0;
+  /* flex: 1; */
+  max-width: 837.8px;
+  flex-shrink: 0;
+}
+
+/* Calendar View Styles */
+.calendarView {
+  flex: 1;
+  background-color: rgb(239, 244, 252);
+  border-radius: 8px 8px 0 0;
+  padding: 8px 15px 15px 15px;
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.calendarHeader {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.calendarHeader h3 {
+  margin: 0;
+  font-size: 1.2em;
+}
+
+.navigation span {
+  margin-left: 10px;
+  cursor: pointer;
+  font-size: 1.2em;
+}
+
+.daysOfWeek {
+  display: grid;
+  grid-template-columns: repeat(7, 1fr);
+  text-align: center;
+  font-weight: bold;
+  font-size: 0.9em;
+  color: #555;
+}
+
+.datesGrid {
+  display: grid;
+  grid-template-columns: repeat(7, 1fr);
+  gap: 5px;
+}
+
+.dateCell {
+  border: 1px solid #eee;
+  border-radius: 4px;
+  padding: 5px;
+  min-height: 60px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  font-size: 0.9em;
+}
+
+.dateNumber {
+  font-weight: bold;
+  margin-bottom: 5px;
+}
+
+.appointmentTime {
+  background-color: #e0e7ff;
+  color: #0056b3;
+  padding: 2px 0px;
+  border-radius: 3px;
+  margin-bottom: 3px;
+  font-size: 0.8em;
+  width: 100%;
+  text-align: center;
+}
+.appointmentTimeCard{
+    font-size: 0.9em;
+    color: #555;
+    align-self: flex-start
+}
+
+.emptySlot {
+  color: #ccc;
+  text-align: center;
+  width: 100%;
+}
+
+.selectedSlot {
+  background-color: #0056b3;
+  color: white;
+  text-align: center;
+  width: 100%;
+}
+
+.appointmentsToday {
+  display: flex;
+  flex-direction: row;
+  gap: 15px;
+  margin-top: 15px;
+  overflow-x: auto;
+}
+
+.appointmentCard {
+  flex-direction: column;
+  background-color: #f0f4ff;
+  border-radius: 8px;
+  padding: 12px;
+  display: flex;
+  align-items: center;
+  width: 180px;
+  flex-shrink: 0;
+}
+
+.darkBlueCard {
+  background-color: #41259e !important;
+  color: white !important;
+}
+
+.darkBlueCard .appointmentTimeCard {
+  color: white !important;
+  background-color: transparent !important;
+}
+
+.darkBlueCard .appointmentDoctor {
+  color: #e2e8f0 !important;
+}
+
+.darkBlueCard .appointmentTitle {
+  color: white !important;
+}
+
+.appointmentDetails {
+  display: flex;
+  width: 100%;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.appointmentTitle {
+  font-weight: bold;
+  margin-bottom: 3px;
+}
+
+.appointmentDoctor {
+  font-size: 0.9em;
+  color: #555;
+  align-self: flex-start;
+}
+
+.appointmentIcon {
+  font-size: 1.5em;
+}
+
+/* Upcoming Schedule Styles */
+.upcomingSchedule {
+  background-color: rgb(238, 243, 249);
+  border-radius: 0 0 8px 8px;
+  padding: 15px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.05);
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.upcomingSchedule h4 {
+  margin: 0;
+  margin-bottom: 10px;
+  font-size: 1.3em;
+}
+
+.daySchedule {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.daySchedule h5 {
+  margin: 0;
+  margin-top: -10px;
+  font-size: 1.1em;
+  color: #555;
+}
+
+.appointmentsList {
+  display: flex;
+  flex-direction: row;
+  gap: 12px;
+  flex-wrap: wrap;
+  margin-top: 6px;
+} 
