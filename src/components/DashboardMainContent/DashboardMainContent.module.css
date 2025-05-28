@@ -1,0 +1,74 @@
+/* Main wrapper for the dashboard content */
+.dashboardMainContentWrapper {
+    display: flex;
+    flex: 1;
+    flex-direction: row;
+    gap: 32px; 
+    padding: 32px 24px;
+    background: #ffffff;
+    min-height: 100vh;
+    box-sizing: border-box;
+}
+
+/* Left column: Anatomy, Health Cards, Activity */
+.leftColumn {
+    flex: 2;
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+  
+}
+
+/* Anatomy and Health Cards side by side */
+.anatomyAndHealthCards {
+    display: flex;
+    flex-direction: row;    
+    gap: 24px;
+    
+}
+
+/* Right column: Calendar, Upcoming Schedule */
+.rightColumn {
+    flex: 1.2;
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+}
+
+/* Card style for all sections */
+.leftColumn > *, .rightColumn > * {
+    background: #fff;
+    border-radius: 18px;
+    box-shadow: 0 2px 12px rgba(44, 62, 80, 0.07);
+    padding: 24px;
+    box-sizing: border-box;
+}
+
+/* Anatomy section should be taller */
+.anatomyAndHealthCards > :first-child {
+    flex: 1.5;
+    min-width: 260px;
+    min-height: 340px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+/* Health cards next to anatomy */
+.anatomyAndHealthCards > :last-child {
+    flex: 1;
+    min-width: 180px;
+}
+
+/* Responsive for smaller screens */
+@media (max-width: 900px) {
+    .dashboardMainContentWrapper {
+        flex-direction: column;
+        gap: 16px;
+        padding: 16px 4px;
+    }
+    .anatomyAndHealthCards {
+        flex-direction: column;
+        gap: 16px;
+    }
+}

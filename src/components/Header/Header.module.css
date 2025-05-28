@@ -1,0 +1,65 @@
+.header {
+  background-color: #ffffff;
+  padding: 10px 20px;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+}
+
+.leftSection {
+  display: flex;
+  align-items: center;
+}
+
+.logo {
+  font-weight: bold;
+  margin-right: 20px;
+  margin-left: 20px;
+}
+
+.searchBar {
+  padding: 5px;
+  border: 1px solid #ccc;
+  border-radius: 15px;
+  width: 300px;
+  display: flex;
+  align-items: center;
+  background-color: white;
+  margin-left: 120px;
+  margin-right: 20px;
+}
+
+.searchBar i {
+  margin-right: 15px;
+}
+
+.bellIcon {
+  margin-right: 20px;
+  color: #361e8f;
+}
+
+.rightIcons {
+  display: flex;
+  align-items: center;
+  margin-left: auto;
+}
+
+.rightIcons span {
+  margin-left: 15px;
+}
+
+.profileButton {
+    background-color: #33c5ed;
+    color: white;
+    border: none;
+    padding: 5px 10px;
+    border-radius: 5px;
+}
+
+.addButton {
+    background-color: #361e8f;
+    color: white;
+    border: none;
+    padding: 5px 10px;
+    border-radius: 5px;
+}
